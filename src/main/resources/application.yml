@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: javaproject
+  main:
+    banner-mode: "OFF"
+  jackson:
+    property-naming-strategy: CAMEL_CASE_TO_LOWER_CASE_WITH_UNDERSCORES
+    serialization-inclusion: NON_NULL
+  datasource:
+    url: jdbc:postgresql://localhost:5432/appdatabase?stringtype=unspecified
+    username: postgres
+    password: example
+
+server:
+  port: 8000
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
