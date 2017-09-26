@@ -20,5 +20,14 @@ to run dependencies and then run the application:
 ```
 ./gradlew bootRun
 ```
-
 App will be available at port `8000`
+
+## How to connect to Postgres
+Run following command to connect to Postgres container:
+```
+docker exec -it DOCKERCONTAINERID bash
+```
+one inside run:
+```
+psql -U postgres
+```
